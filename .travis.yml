@@ -1,4 +1,6 @@
-script: ./tester
 language: node_js
 node_js:
-  - "node"
+ - "node"
+env:
+- MY_VAR=EverythignIsAwesome
+- NODE_ENV=TEST
