@@ -16,7 +16,20 @@ const sourceObject = {
 }
 
 // Your code :
-
+var get = (el) => {
+  switch(el){
+    case("num"):
+      return 42;
+        case("bool"):
+      return true;
+        case("str"):
+      return 'some text';
+        case("log"):
+      return console.log;
+        default:
+      undefined;
+  }
+}
 //* Begin of tests
 const assert = require('assert')
 
