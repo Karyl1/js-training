@@ -9,7 +9,27 @@
  */
 
 // Your code :
-
+var multiply = (a, b) => {
+  let positive = 0
+  let result = 0
+ 
+  if (a < 0) {
+    positive = - a
+ } else {
+   positive = a
+ }
+  for (let i = 0; i < positive; i++) {
+   result += b
+ }
+ 
+  if (a < 0) {
+   return - result
+ } else if (a < 0 && b < 0) {
+   return result
+ } else {
+   return result
+ }
+ }
 //* Begin of tests
 const assert = require('assert')
 
